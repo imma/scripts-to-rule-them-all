@@ -1,13 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-# script/bootstrap: Resolve all dependencies that the application requires to
-#                   run.
-
-set -e
-
-cd "$(dirname "$0")/.."
-
-echo "==> Installing gem dependencies…"
-bundle check --path vendor/gems 2>&1 > /dev/null || {
-  bundle install --path vendor/gems --quiet --without production
+function main {
+  true
 }
+
+main "$@"
