@@ -7,14 +7,13 @@
 ## opportunity to run database migrations or any other things required to get the
 ## state of the app into shape for the current version that is checked out.
 
-function migrate {
-  echo "$(( $(cat state) + 1 ))" > state.tmp
-  mv state.tmp state
+function update {
+  true
 }
 
 function main {
   script/bootstrap
-  migrate
+  update
 }
 
 source script/profile

@@ -6,7 +6,7 @@
 ## anything that needs to happen to open a console for the requested environment.
 
 function console {
-  cat state
+  true
 }
 
 function main {

@@ -6,10 +6,7 @@
 ## booting to ensure that the application is up to date and can run appropriately.
 
 function server {
-  while true; do
-    echo "$(date) $(cat state)"
-    sleep 1
-  done
+  true
 }
 
 function main {

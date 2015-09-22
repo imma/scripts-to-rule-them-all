@@ -9,13 +9,13 @@
 ## date. If called from script/cibuild, it should probably reset the application
 ## to a clean state.
 
-function stest {
-  [[ -f state ]]
+function testing {
+  true
 }
 
 function main {
   script/setup || script/update
-  stest
+  testing
 }
 
 source script/profile

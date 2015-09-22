@@ -6,8 +6,7 @@
 ## simply by calling script/test.
 
 function setup {
-  echo 999 > state.tmp
-  mv state.tmp state
+  true
 }
 
 function main {
