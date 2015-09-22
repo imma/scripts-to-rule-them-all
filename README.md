@@ -35,7 +35,11 @@ The following is a list of scripts and their primary responsibilities.
 script/profile is used to initialize an environment in a bash shell or
 script.  
 
-This file is sourced after .profile.d/*
+### .profile.d/*
+
+The bash scripts in `.profile.d/` are loaded in no particular order by a
+calling framework.  It is used to inject configuration before
+`script/profile` is loaded.
 
 ### script/bootstrap
 
