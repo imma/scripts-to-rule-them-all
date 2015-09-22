@@ -17,4 +17,5 @@ function main {
   migrate
 }
 
+source script/profile
 main "$@"

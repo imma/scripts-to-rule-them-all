@@ -16,4 +16,5 @@ function main {
   console
 }
 
+source script/profile
 main "$@"

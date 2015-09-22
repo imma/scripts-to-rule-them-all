@@ -30,6 +30,13 @@ contributions.
 
 The following is a list of scripts and their primary responsibilities.
 
+### script/profile
+
+script/profile is used to initialize an environment in a bash shell or
+script.  
+
+This file is sourced after .profile.d/*
+
 ### script/bootstrap
 
 `script/bootstrap` is used solely for fulfilling dependencies of the project.

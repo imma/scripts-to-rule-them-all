@@ -17,4 +17,5 @@ function main {
   server
 }
 
+source script/profile
 main "$@"

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+## script/profile is used to initialize an environment in a bash shell or
+## script.  This file is sourced after .profile.d/*
+
+function main {
+  DEBUG=1
+}
+
+source script/profile
+main "$@"

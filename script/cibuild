@@ -15,4 +15,5 @@ function main {
   script/test
 }
 
+source script/profile
 main "$@"

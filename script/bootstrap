@@ -10,4 +10,5 @@ function main {
   #app compile virtualenv
 }
 
+source script/profile
 main "$@"
