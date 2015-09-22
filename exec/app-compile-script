@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+function main {
+  local phome="$1"; shift
+  local pth_cache="$1"; shift
+  local pth_env="$1"; shift
+
+  local shome="$(unset CDPATH; cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"
+
+  local pth_script
+  for pth_script in $(set +f; ls -d "$shome/script/"*); do
+    local nm_script="${pth_script##*/}"
+    if [[ -f "$phome/script/$nm_script" ]]; then
+      echo "INFO: skipping $nm_script, a script already exists"
+    else
+      echo install -m 0755 "$pth_script" "$phome/script/$nm_script"
+    fi
+  done
+}
+
+source sub "$0" "$@"

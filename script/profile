@@ -4,7 +4,8 @@
 ## script.  This file is sourced after .profile.d/*
 
 function profile {
-  DEBUG=1
+  local shome="$(unset CDPATH; cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"
+  PATH="$shome/bin:$shome/exec:$PATH"
 }
 
 profile
