@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
+## script/bootstrap is used solely for fulfilling dependencies of the project.
+## This can mean RubyGems, npm packages, Git submodules, etc. The goal is to make
+## sure all required dependencies are installed.
+
 function main {
-  true
+  app compile gitsubmodule
+  app compile bundler
+  app compile virtualenv
 }
 
 main "$@"
