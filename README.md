@@ -3,7 +3,7 @@
 This is a set of boilerplate scripts describing the [normalized script pattern
 that GitHub uses in its projects](http://githubengineering.com/scripts-to-rule-them-all/). While these
 patterns can work for projects based on any framework or language, these
-particular examples are for a simple Ruby on Rails application.
+particular examples are for updating a number in a state file.
 
 ## The Idea
 
