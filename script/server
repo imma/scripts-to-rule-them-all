@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 
+## script/server is used to start the application. For a web application, this
+## might start up any extra processes that the application requires to run in
+## addition to itself. script/update should be called ahead of any application
+## booting to ensure that the application is up to date and can run appropriately.
+
 function server {
+  while true; do
+    echo "$(date) $(cat state)"
+    sleep 1
+  done
 }
 
 function main {

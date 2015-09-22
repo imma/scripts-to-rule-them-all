@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
+## script/console is used to open a console for your application. A good pattern
+## to support is having an optional argument that is an environment name, so you
+## can connect to that environment's console. You should configure and run
+## anything that needs to happen to open a console for the requested environment.
+
 function console {
-  true
+  cat state
 }
 
 function main {
