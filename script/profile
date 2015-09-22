@@ -3,9 +3,8 @@
 ## script/profile is used to initialize an environment in a bash shell or
 ## script.  This file is sourced after .profile.d/*
 
-function main {
+function profile {
   DEBUG=1
 }
 
-source script/profile
-main "$@"
+profile
