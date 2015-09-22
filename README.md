@@ -38,8 +38,8 @@ script.
 ### .profile.d/*
 
 The bash scripts in `.profile.d/` are loaded in no particular order by a
-calling framework.  It is used to inject configuration before
-`script/profile` is loaded.
+calling framework.  It is used to inject configuration before the all
+purpose `script/profile` is loaded.
 
 ### script/bootstrap
 
