@@ -6,8 +6,8 @@
 
 function main {
   app compile gitsubmodule
-  app compile bundler
-  app compile virtualenv
+  #app compile bundler
+  #app compile virtualenv
 }
 
 main "$@"
