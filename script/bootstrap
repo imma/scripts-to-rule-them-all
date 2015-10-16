@@ -6,8 +6,6 @@
 
 function main {
   app compile gitsubmodule
-  #app compile bundler
-  #app compile virtualenv
 }
 
 source script/profile
