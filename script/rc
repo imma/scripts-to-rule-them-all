@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+## script/rc is used to initialize resources that aren't inherited by child
+## processes, like shell functions

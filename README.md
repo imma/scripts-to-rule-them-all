@@ -31,13 +31,12 @@ The following is a list of scripts and their primary responsibilities.
 ### script/profile
 
 script/profile is used to initialize an environment in a bash shell or
-script.  
+script.  It should source script/rc if it exists.
 
-### .profile.d/*
+### script/rc
 
-The bash scripts in `.profile.d/` are loaded in no particular order by a
-calling framework.  It is used to inject configuration before the all
-purpose `script/profile` is loaded.
+script/rc is used to initialize resources that aren't inherited by child
+processes, such as shell functions.
 
 ### script/bootstrap
 

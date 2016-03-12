@@ -5,8 +5,10 @@
 ## sure all required dependencies are installed.
 
 function main {
-  app compile gitsubmodule
+  local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
+  source "$shome/script/profile"
+  
+  true
 }
 
-source script/profile
 main "$@"

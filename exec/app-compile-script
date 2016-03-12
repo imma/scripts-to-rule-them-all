@@ -8,7 +8,6 @@ function main {
   local shome="$(unset CDPATH; cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"
 
   install -v -d "$phome/script"
-  install -v -d "$phome/.profile.d"
 
   local pth_script
   for pth_script in $(set +f; ls -d "$shome/script/"*); do
