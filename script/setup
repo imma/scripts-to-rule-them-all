@@ -9,9 +9,11 @@ function setup {
 }
 
 function main {
-  script/bootstrap
+  local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
+  source "$shome/script/profile"
+
+  "$shome/script/bootstrap"
   setup
 }
 
-source script/profile
 main "$@"

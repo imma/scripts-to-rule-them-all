@@ -10,9 +10,11 @@ function setup {
 }
 
 function main {
+  local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
+  source "$shome/script/profile"
+
   setup
-  script/test
+  "$shome/script/test"
 }
 
-source script/profile
 main "$@"

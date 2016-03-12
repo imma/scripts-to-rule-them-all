@@ -10,11 +10,13 @@ function console {
 }
 
 function main {
+  local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
+  source "$shome/script/profile"
+
   local nm_env="$1"; shift
 
-  script/update
+  "$shome/script/update"
   console
 }
 
-source script/profile
 main "$@"

@@ -10,9 +10,11 @@ function server {
 }
 
 function main {
-  script/update
+  local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
+  source "$shome/script/profile"
+
+  "$shome/script/update"
   server
 }
 
-source script/profile
 main "$@"

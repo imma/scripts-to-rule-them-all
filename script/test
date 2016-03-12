@@ -14,9 +14,11 @@ function testing {
 }
 
 function main {
-  script/setup || script/update
+  local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
+  source "$shome/script/profile"
+
+  "$shome/script/setup" || "$shome/script/update"
   testing
 }
 
-source script/profile
 main "$@"
