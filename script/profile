@@ -5,7 +5,7 @@
 
 function profile {
   local shome="$(unset CDPATH; cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"
-  PATH="$shome/bin:$shome/exec:$PATH"
+  PATH="$shome/exec:$PATH"
 
   source "$shome/script/rc"
 }
