@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
 
 ## script/profile is used to initialize an environment in a bash shell or
-## script.  It should also source script/rc
+## script.
 
 function _scripts_to_rule_them_all_profile {
   local shome="$(unset CDPATH; cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"
   PATH="$shome/exec:$PATH"
-
-  source "$shome/script/rc"
 }
 
 _scripts_to_rule_them_all_profile
