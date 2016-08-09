@@ -4,7 +4,7 @@
 ## script.
 
 function _scripts_to_rule_them_all_profile {
-  local shome="$(unset CDPATH; cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"
+  local shome="${_scripts_to_rule_them_all:-"$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
   PATH="$shome/exec:$PATH"
 }
 
