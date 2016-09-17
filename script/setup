@@ -9,7 +9,7 @@ function setup {
 }
 
 function main {
-  local shome="${_scripts_to_rule_them_all_home:-"$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"}"
+  local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
   source "$shome/script/profile"
 
   "$shome/script/bootstrap"

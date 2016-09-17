@@ -5,7 +5,7 @@ function main {
   local pth_cache="$1"; shift
   local pth_env="$1"; shift
 
-  local shome="$(unset CDPATH; cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"
+  local shome="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"
 
   install -v -d "$phome/script"
 
